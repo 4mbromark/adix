@@ -1,0 +1,33 @@
+<div class="adix-table-bar">
+    <span class="adix-table-bar-icon material-symbols-outlined">{{ module.icon }}</span>
+    <span class="adix-table-bar-title">{{ module.title }}</span>
+    <div class="adix-row adix-table-bar-search">
+      <span class="adix-table-bar-search-icon material-symbols-outlined">search</span>
+      <input class="adix-table-bar-search-input">
+    </div>
+    <div class="adix-table-bar-action">
+      <button *ngIf="module.addButtonEnabled" class="adix-table-bar-action-button" (click)="add();">
+        <span class="adix-table-bar-action-button-icon material-symbols-outlined">add</span>
+        {{ module.addButtonText }}
+      </button>
+      <button class="adix-table-bar-action-button" (click)="refresh();">
+        <span class="material-symbols-outlined">sync</span>
+      </button>
+    </div>
+</div>
+
+<div class="adix-table-container">
+  <ag-grid-angular #agGrid class="adix-100 ag-theme-balham"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+
+    [gridOptions]="gridOptions"
+    (gridReady)="gridReady($event);"
+    rowSelection="single"
+
+    [frameworkComponents]="frameworkComponents"
+    [loadingOverlayComponent]="loadingOverlayComponent"
+    [noRowsOverlayComponent]="emptyOverlayComponent"
+    [noRowsOverlayComponentParams]="emptyOverlayParams"
+  ></ag-grid-angular>
+</div>

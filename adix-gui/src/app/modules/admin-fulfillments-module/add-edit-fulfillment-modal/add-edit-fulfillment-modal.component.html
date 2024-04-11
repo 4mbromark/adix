@@ -1,0 +1,34 @@
+<!-- NOME ADEMPIMENTO --> <input
+type="text"
+placeholder="Nome"
+[(formControl)]="name"
+required
+>
+
+<!-- DESCRIZIONE--> <input
+type="text"
+placeholder="Descrizione"
+[(formControl)]="description"
+required
+>
+
+<!-- RICORRENZA --> <input
+type="text"
+placeholder="Ricorrenza (mesi)"
+[(formControl)]="monthRecurrence"
+[min]="1" [max]="12"
+required
+>
+
+<!-- NOTE --> <textarea
+type="text"
+placeholder="Note"
+[(formControl)]="note"
+></textarea>
+
+<button class="adix-button-orange" (click)="undo();">
+  Annulla
+</button>
+<button class="adix-button-green" (click)="confirm();" [disabled]="!valid()">
+  Conferma
+</button>

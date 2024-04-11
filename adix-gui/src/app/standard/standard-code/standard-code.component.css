@@ -1,0 +1,9 @@
+.adix-standard-code {
+  border: 1px solid gainsboro;
+  background-color: beige;
+  font-size: small;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

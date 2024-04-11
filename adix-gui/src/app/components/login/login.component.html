@@ -1,0 +1,34 @@
+<div class="adix-100" style="display: flex; justify-content: center; align-items: center;">
+  <div class="adix-column" style ="width: 15%; height: 20%; justify-content: center;">
+    <span style="text-align: center; font-size: 25px; margin: 20px;">Adix</span>
+    <!-- CODICE UTENTE --> <input
+      type="text"
+      class="adix-login-input"
+      placeholder="Codice"
+      [(formControl)]="code"
+      [minLength]="2" [maxLength]="2"
+      autocomplete="additional-name"
+      (keydown.enter)="login();"
+      oninput="this.value = this.value.toUpperCase()"
+      required
+    >
+    <!-- INDIRIZZO EMAIL --> <input
+      type="email"
+      class="adix-login-input"
+      placeholder="Indirizzo email"
+      [(formControl)]="mail"
+      autocomplete="email"
+      (keydown.enter)="login();"
+      required
+    >
+    <!-- PASSWORD --> <input
+      type="password"
+      class="adix-login-input"
+      placeholder="Password"
+      [(formControl)]="pswd"
+      autocomplete=""
+      (keydown.enter)="login();"
+      required
+    >
+  </div>
+</div>

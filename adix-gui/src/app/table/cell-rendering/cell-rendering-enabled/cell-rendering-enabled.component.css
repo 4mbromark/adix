@@ -1,0 +1,20 @@
+.adix-table-cell-enabled-status {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.adix-table-cell-enabled-circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+  /** TODO */
+  vertical-align: text-top;
+}
+
+.adix-table-cell-enabled-button-link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}

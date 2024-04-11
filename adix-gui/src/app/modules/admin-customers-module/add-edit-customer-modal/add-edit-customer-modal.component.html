@@ -1,0 +1,43 @@
+<!-- CODICE AZIENDA --> <input
+type="text"
+placeholder="Codice"
+[(formControl)]="code"
+[minLength]="2" [maxLength]="2"
+oninput="this.value = this.value.toUpperCase()"
+required
+>
+
+<!-- RAGIONE SOCIALE --> <input
+type="text"
+placeholder="Ragione sociale"
+[(formControl)]="businessName"
+required
+>
+
+<!-- PARTITA IVA --> <input
+type="text"
+placeholder="Partita IVA"
+[(formControl)]="vatNumber"
+[minLength]="11" [maxLength]="11"
+oninput="this.value = this.value.toUpperCase()"
+required
+>
+
+<!-- TIPO CONTABILITA' --> <select
+[(formControl)]="code"
+>
+  <option *ngFor="let type of customerAccountingTypes" [value]="type.code">{{ type.title }}</option>
+</select>
+
+<!-- NOTE --> <textarea
+type="text"
+placeholder="Note"
+[(formControl)]="note"
+></textarea>
+
+<button class="adix-button-orange" (click)="undo();">
+  Annulla
+</button>
+<button class="adix-button-green" (click)="confirm();" [disabled]="!valid()">
+  Conferma
+</button>

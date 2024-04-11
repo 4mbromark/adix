@@ -1,0 +1,30 @@
+.adix-sidebar {
+  height: 100%;
+  border-right: 1px solid gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.adix-sidebar-module-button {
+  margin: 5px;
+  padding: 6px 8px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: gray;
+}
+.adix-sidebar-module-button:hover {
+  background-color: gainsboro;
+}
+
+.adix-sidebar-module-container {
+  justify-content: center;
+}
+
+.adix-sidebar-separator-line {
+  margin: 5px;
+  border-top: 1px solid gainsboro;
+  display: block;
+}

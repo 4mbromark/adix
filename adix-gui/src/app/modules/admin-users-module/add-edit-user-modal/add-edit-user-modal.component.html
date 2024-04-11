@@ -1,0 +1,45 @@
+Inserimento nuovo utente
+
+<!-- CODICE UTENTE --> <input
+type="text"
+placeholder="Codice"
+[(formControl)]="code"
+[minLength]="2" [maxLength]="2"
+oninput="this.value = this.value.toUpperCase()"
+required
+>
+Codice univoco di due lettere.
+
+<!-- INDIRIZZO EMAIL --> <input
+type="email"
+placeholder="Indirizzo email"
+[(formControl)]="emailAddress"
+required
+>
+
+<!-- NOME --> <input
+type="text"
+placeholder="Nome"
+[(formControl)]="firstName"
+required
+>
+
+<!-- COGNOME --> <input
+type="text"
+placeholder="Cognome"
+[(formControl)]="lastName"
+required
+>
+
+<!-- NOTE --> <textarea
+type="text"
+placeholder="Note"
+[(formControl)]="note"
+></textarea>
+
+<button class="adix-button-orange" (click)="undo();">
+  Annulla
+</button>
+<button class="adix-button-green" (click)="confirm();" [disabled]="!valid()">
+  Conferma
+</button>

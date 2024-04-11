@@ -1,0 +1,10 @@
+<div class="adix-sidebar">
+  <div class="adix-column adix-sidebar-module-container">
+    <div *ngFor="let button of buttonList">
+      <button *ngIf="button.module" class="adix-sidebar-module-button" [title]="button.module.title" [routerLink]="button.module.link">
+        <span class="material-symbols-outlined">{{ button.module.icon }}</span>
+      </button>
+      <span *ngIf="!button.module" class="adix-sidebar-separator-line"></span>
+    </div>
+  </div>
+</div>

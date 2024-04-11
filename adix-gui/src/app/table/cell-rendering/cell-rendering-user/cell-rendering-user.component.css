@@ -1,0 +1,22 @@
+.adix-table-cell-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.adix-table-cell-user-name {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.adix-table-cell-user-icon {
+  position: absolute;
+  right: 10px;
+}
+
+.adix-table-cell-user-dropdown {
+
+}

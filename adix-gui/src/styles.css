@@ -1,0 +1,77 @@
+@import '~@angular/cdk/overlay-prebuilt.css';
+
+@import "../node_modules/ag-grid-community/dist/styles/ag-grid.css";
+@import "../node_modules/ag-grid-community/dist/styles/ag-theme-balham.css";
+@import "../node_modules/ag-grid-community/dist/styles/ag-theme-material.css";
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+input, textarea, button {
+  padding: 6px 10px;
+  margin: 5px;
+  border: solid 1px gainsboro;
+  outline: none;
+  border-radius: 0px;
+  font-size: 15px;
+}
+input {
+  min-width: 200px;
+}
+textarea {
+  width: 90%;
+}
+button {
+  background-color: transparent;
+}
+
+.ag-theme-balham {
+  --ag-header-foreground-color: white;
+  --ag-header-background-color: black;
+  --ag-header-cell-hover-foreground-color: black;
+  --ag-header-cell-hover-background-color: white;
+}
+.ag-theme-balham .ag-root {
+  border: black solid 1px;
+}
+.ag-theme-balham .ag-header-cell {
+  font-size: 16px;
+}
+.ag-theme-balham .ag-header-icon {
+  color: white;
+}
+.ag-theme-balham .ag-cell {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+
+.adix-100 {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.adix-row {
+  display: flex;
+  flex-direction: row;
+}
+.adix-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.adix-button-green {
+  border: solid 1px green;
+}
+.adix-button-orange {
+  border: solid 1px orange;
+}
+.adix-button-red {
+  border: solid 1px red;
+}

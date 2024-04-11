@@ -1,0 +1,19 @@
+.adix-table-cell-recurrence {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.adix-table-cell-recurrence-number {
+  font-size: 14px;
+  margin-right: 5px;
+  width: 20px;
+}
+
+.adix-table-cell-recurrence-square {
+  background-color: lightskyblue;
+  width: 15px;
+  height: 15px;
+  margin-left: 3px;
+}
